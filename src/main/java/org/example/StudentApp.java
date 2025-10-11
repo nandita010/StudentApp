@@ -21,8 +21,26 @@ public class StudentApp {
             System.out.println("Please enter your name: ");
             String name = sc.nextLine();
 
-            System.out.println("Please enter your email: ");
-            String email = sc.nextLine();
+            //Using boolean to check whether email is unique or not
+            String email;
+            while (true) { // repeat until email is unique
+                System.out.println("Please enter your email: ");
+                email = sc.nextLine().trim().toLowerCase(); // normalize
+
+                boolean exists = false;
+                for (Student s : students) {
+                    if (s.getEmail().trim().toLowerCase().equals(email)) {
+                        exists = true;
+                        break;
+                    }
+                }
+
+                if (exists) {
+                    System.out.println("That email already exists. Please use another one. ");
+                } else {
+                    break; // unique email found, exit the inner loop
+                }
+            }
 
             System.out.println("Please enter your Student ID: ");
             String studentID = sc.nextLine();
