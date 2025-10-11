@@ -43,10 +43,10 @@ public class Student {
         this.studentID = studentID;
     }
 
-@Override
+    @Override
     public String toString() {
 
-        return "Name: " + name + ", Email" + email + ", Student ID: " +studentID;
-}
+        return "Name: " + name + ", Email" + email + ", Student ID: " + studentID;
+    }
 
 }
