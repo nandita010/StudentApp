@@ -2,32 +2,51 @@ package org.example;
 
 public class Student {
     private String name;
+    private String email;
+    private String studentID;
+
+    public Student() {
+    }
+
+    public Student(String name, String email, String studentID) {
+        this.name = name;
+        this.email = email;
+        this.studentID = studentID;
+    }
 
     public String getName() {
         return name;
     }
 
-    public void setEmail(String Email) {
-        this.name = name;
-    }
-    private String Email;
-
     public String getEmail() {
-        return Email;
+        return email;
     }
-
-    public void setName(String Email) {
-        this.Email = Email;
-    }
-    private String StudentID ;
 
     public String getstudentID() {
-        return StudentID;
+        return studentID;
     }
 
-    public void setStudentID(String name) {
+
+    public void setName(String name) {
         this.name = name;
     }
 
+
+    public void setEmail(String Email) {
+        this.email = email;
+    }
+
+    ;
+
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
+    }
+
+@Override
+    public String toString() {
+
+        return "Name: " + name + ", Email" + email + ", Student ID: " +studentID;
+}
 
 }
