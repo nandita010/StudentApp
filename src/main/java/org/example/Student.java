@@ -32,7 +32,7 @@ public class Student {
     }
 
 
-    public void setEmail(String Email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
