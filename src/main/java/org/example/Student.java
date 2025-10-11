@@ -22,7 +22,7 @@ public class Student {
         return email;
     }
 
-    public String getstudentID() {
+    public String getStudentID() {
         return studentID;
     }
 
@@ -36,8 +36,6 @@ public class Student {
         this.email = email;
     }
 
-    ;
-
 
     public void setStudentID(String studentID) {
         this.studentID = studentID;
@@ -46,7 +44,7 @@ public class Student {
     @Override
     public String toString() {
 
-        return "Name: " + name + ", Email" + email + ", Student ID: " + studentID;
+        return "Name: " + name + ", Email: " + email + ", Student ID: " + studentID;
     }
 
 }
