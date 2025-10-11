@@ -11,7 +11,7 @@ public class StudentApp {
 
         System.out.println("Please enter the number of students: ");
           int count = sc.nextInt();
-          sc.nextInt();
+          sc.nextLine();
 
 
         int i = 0;
